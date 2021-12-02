@@ -1,0 +1,62 @@
+value<html>
+  <head>
+    <title>Cálculo de Imposto de Renda para empresas de Lucro Presumido</title>
+  </head>
+  <body>
+    <div class="titulo">
+      Cálculo Trimestral de Imposto de Renda de Pessoa Jurídica (IRPJ) para empresas de lucro presumido
+    <h1>
+      <a>Selecione a alíquota de presunção do lucro
+     <select id="aliquota">
+       <option value="0.016">1,6%</option> 
+       <option value="0.08" selected>8%</option>
+       <option value="0.16">16%</option>
+       <option value="0.32">32%</option>
+     </select>
+        </a>
+     <table>
+      <tr>
+        <td>Receita do 1º mês</td>
+        <td><input type="number" id="receita1" value="0" min="0" size="1"/></td>
+        <td rowspan="3">IRRF</td>
+        <td rowspan="3"><input type="number" id="irrf" value="0" min="0" size="1"/></td>
+      </tr>
+      <tr>
+        <td>Receita do 2º mês</td>
+        <td><input type="number" id="receita2" value="0" min="0" size="1"/></td>
+      </tr>
+      <tr>
+        <td>Receita do 3º mês</td>
+        <td><input type="number" id="receita3" value="0" min="0" size="1"/></td>
+      </tr>
+      <tr>
+        <td>Receita de aplicação BB</td>
+        <td><input type="number" id="aplicacao1" value="0" min="0" size="1"/></td>
+        <td>Imposto de renda BB</td>
+        <td><input type="number" id="irAplicacao1" value="0" min="0" size="1"/></td>
+      </tr>
+      <tr>
+        <td>Receita de aplicação Unicred</td>
+        <td><input type="number" id="aplicacao2" value="0" min="0" size="1"/></td>
+        <td>Imposto de renda Unicred</td>
+        <td><input type="number" id="irAplicacao2" value="0" min="0" size="1"/></td>
+      </tr>
+      <tr>
+        <td>Receita de aplicação Bradesco</td>
+        <td><input type="number" id="aplicacao3" value="0" min="0" size="1"/></td>
+        <td>Imposto de renda Bradesco</td>
+        <td><input type="number" id="irAplicacao3" value="0" min="0" size="1"/></td>
+      </tr>
+    </table>
+     <button type="submit" onclick="Calcular()">Calcular!</button> 
+    </h1>
+    <h2>
+      Resultado:
+    </h2>
+      <h3 id="resultado"></h3>
+    </div>
+  </body>
+  <footer>
+    Desenvolvido por Gabriel Olegario - Assistente Financeiro - Guedes Contabilidade
+  </footer>
+</html>

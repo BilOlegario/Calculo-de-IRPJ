@@ -1,0 +1,49 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  min-height: 450px;
+  background-image: url("https://i.ibb.co/bWK3HVf/Guedes.png");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+a {
+  font-size: 17px;
+}
+
+table {
+  margin: auto;
+  text-align: right;
+  font-size: 17px;
+  border-spacing: 5px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input {
+  width: 100px;
+  align-self: center;
+  text-align: right;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+footer {
+  color: #000000;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  text-align: center;
+  background-color: #B0151F;
+}
